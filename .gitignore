@@ -1,0 +1,17 @@
+# Fichiers Python et système
+__pycache__/
+*.pyc
+venv/
+.env
+# Fichiers générés par l'app (on ne veut pas tes lettres persos sur GitHub)
+*.md
+*.docx
+*.pdf
+# Fichiers système Mac/Windows
+.DS_Store
+Thumbs.db
+# Clés et secrets (Au cas où)
+secrets.toml
+trash
+
+

@@ -1,0 +1,10 @@
+streamlit
+crewai==1.6.0
+crewai-tools==1.6.0
+PyMuPDF==1.26.6
+pymupdf4llm==0.2.4
+python-dotenv
+PyYAML
+flask
+gunicorn
+python-docx
