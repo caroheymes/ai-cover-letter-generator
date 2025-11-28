@@ -9,7 +9,7 @@ env:
   PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
   REGION: europe-west9             # À modifier selon ta région
   REPO_NAME: repo-paris              # Le nom du dépôt Artifact Registry créé étape 1
-  SERVICE_NAME: mon-nom-de-service-cloud-run  # Le nom de ton service Cloud Run existant
+  SERVICE_NAME: cover-letter-app  # Le nom de ton service Cloud Run existant
   IMAGE_NAME: image-streamlit
 
 jobs:
