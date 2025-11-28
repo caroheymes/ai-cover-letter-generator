@@ -98,7 +98,9 @@ if not st.session_state.openai_key or not st.session_state.serper_key:
     st.markdown("""
     > 🔒 **Tes clés API ne sont JAMAIS conservées.**  
     > Elles sont utilisées uniquement pendant ta session et disparaissent quand tu fermes l'app.  
-    > Je n'ai aucun accès à tes secrets, ni aucun moyen de savoir ce que tu fais. Le code est open source et consultable sur Github
+    > Je n'ai aucun accès à tes secrets, ni aucun moyen de savoir ce que tu fais. 
+                
+    >**[Le code est open source et consultable sur Github](https://github.com/caroheymes/ai-cover-letter-generator)**
     """)
     st.subheader("Colle tes clés dans le menu de gauche et amuse-toi bien 🎉 !")
     st.markdown('---')

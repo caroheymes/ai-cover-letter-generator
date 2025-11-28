@@ -1,5 +1,4 @@
 company_culture_task:
-    # et les réussites de son service juridique.
   description: |
     Analyse le site web ({company_url}) et la description de l'entreprise
     pour bien comprendre sa culture, ses valeurs et ses enjeux
@@ -28,42 +27,32 @@ cv_analyzer_task:
     Un résumé structuré des expériences, compétences et qualifications du candidat
   async_execution: true
 
-# draft_letter_task:
-#   description: |
-#     En utilisant {hiring_needs} et l'extraction du CV,
-#     rédige une lettre de motivation.
-#     Structure :
-#     - Accroche percutante alignée avec la culture d'entreprise
-#     - Paragraphe qui démontre que la candidate est parfaite pour le poste proposé en phase avec son profil
-#     - Paragraphe sur la motivation et l'adéquation culturelle
-#     - Conclusion engageante
-#     Le ton doit correspondre à la culture de l'entreprise.
-#   expected_output: |
-#     Une lettre de motivation parfaite, qui correspond
-#     bien à la culture de l'entreprise
-#     qui donne une vision engageante de la candidate, basée sur son CV et sur {hiring_needs}.
+
 
 draft_letter_task:
   description:  |
     Rédiger une lettre de motivation pour {candidate_profile} postulant chez {company_url} pour un poste correspondant à {hiring_needs}
-    Structure
+    IMPORTANT : Tu dois rédiger la lettre en accordant tous les adjectifs, noms et participes passés au **{gender}**
+
+    Structure attendue :
     - Accroche percutante alignée avec la culture d'entreprise
     - Paragraphe qui démontre que le candidat est idéal pour le poste proposé 
     - Paragraphe sur la motivation et l'adéquation culturelle
     - Conclusion engageante
     Le ton doit correspondre à la culture de l'entreprise.
   expected_output: |
-    Une lettre de motivation percutante et personnalisée qui donne une vision engageante du candidat basé sur candidate_profile et son CV
+    Une lettre de motivation percutante et personnalisée, accordée au {gender} qui donne une vision engageante du candidat basé sur candidate_profile et son CV
   async_execution: false 
 
 review_letter_task:
   description: |
     Relis la lettre de motivation pour le poste suivant : {hiring_needs}.
-    Vérifie que toutes les informations sur la candidate sont exactes.
+    CRITÈRE CRITIQUE : Vérifie scrupuleusement que les accords de genre sont corrects pour un profil **{gender}**.
+    Vérifie que toutes les informations sur le candidat sont exactes.
     Résume le contenu de la lettre en moins de 500 mots.
     Apporte les modifications nécessaires pour qu'elle soit parfaite.
   expected_output: |
-    Une lettre de motivation parfaite, qui colle au profil de la candidate et au poste,
+    Une lettre de motivation parfaite, sans faute d'accord de genre ({gender}) qui colle au profil du candidat et au poste,
     sans erreur, claire, engageante et parfaitement alignée avec la culture de l'entreprise en moins de 500 mots.
     Le tout, formaté en Markdown et prêt à être publié.
   async_execution: false 
