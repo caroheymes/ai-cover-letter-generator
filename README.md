@@ -26,6 +26,11 @@ docker run -p 8080:8080 cover-letter-app```
 ```gcloud builds submit --tag gcr.io/VOTRE_PROJET_ID/cover-letter-app .
 gcloud run deploy cover-letter-app --image gcr.io/VOTRE_PROJET_ID/cover-letter-app --platform managed --region europe-west9 --allow-unauthenticated
 ```
+
+App consultable en ligne https://cover-letter-app-948219637422.europe-west9.run.app/
+
+Déploiement cicd avec github actions
+
 Si cette app vous fait gagner du temps, offrez moi un café !
 [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://www.buymeacoffee.com/CaroMS)
 
