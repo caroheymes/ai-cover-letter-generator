@@ -114,7 +114,7 @@ if not st.session_state.openai_key or not st.session_state.serper_key:
 # Configuration des variables d'environnement pour CrewAI
 os.environ["OPENAI_API_KEY"] = st.session_state.openai_key
 os.environ["SERPER_API_KEY"] = st.session_state.serper_key
-os.environ['OPENAI_MODEL_NAME'] = "gpt-5-nano"
+os.environ['OPENAI_MODEL_NAME'] = "gpt-5-mini" #"gpt-5-nano"
 
 # # Vérification des clés API
 def check_api_keys():
